@@ -1,5 +1,6 @@
 "use client"
 
+import { Variants } from "framer-motion"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { policyIcons } from "@/lib/data"
@@ -7,7 +8,7 @@ import { Dialog, DialogTrigger } from "@/components/ui/dialog"
 import InsuranceCalculatorModal from "@/components/common/InsuranceCalculatorModal"
 
 export default function HeroSection() {
-  const iconVariants = {
+  const iconVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
       opacity: 1,

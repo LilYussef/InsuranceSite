@@ -24,15 +24,15 @@ export default function ContactPage() {
             <div className="space-y-6 text-gray-300">
               <div className="flex items-center">
                 <Mail className="mr-4 h-6 w-6 text-primary" />
-                <span>info@vercelinsurance.com</span>
+                <span>yhelix_@outlook.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-4 h-6 w-6 text-primary" />
-                <span>+1 (123) 456-7890</span>
+                <span>+20 (109) 579-8212</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="mr-4 h-6 w-6 text-primary" />
-                <span>123 Vercel Drive, Suite 100, San Francisco, CA 94107</span>
+                <span>Alexandria, Egypt</span>
               </div>
             </div>
             <div className="mt-8">

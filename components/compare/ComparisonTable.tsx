@@ -1,5 +1,6 @@
 "use client"
 
+import { Variants } from "framer-motion"
 import { motion } from "framer-motion"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
@@ -7,12 +8,12 @@ import { Check, X, Info } from "lucide-react"
 import { pricingPlans, comparisonFeatures, hasFeature } from "@/lib/data"
 
 export default function ComparisonTable() {
-  const rowVariants = {
+  const rowVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
   }
 
-  const cellVariants = {
+  const cellVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.3, ease: "easeOut" } },
   }

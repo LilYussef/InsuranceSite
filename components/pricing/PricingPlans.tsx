@@ -1,5 +1,6 @@
 "use client"
 
+import { Variants } from "framer-motion"
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
@@ -11,7 +12,7 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 export default function PricingPlans() {
   const [coverageType, setCoverageType] = useState<"individual" | "family">("individual")
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
   }

@@ -1,11 +1,12 @@
 "use client"
 
+import { Variants } from "framer-motion"
 import { motion } from "framer-motion"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { faqItems } from "@/lib/data"
 
 export default function FAQSection() {
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
   }
