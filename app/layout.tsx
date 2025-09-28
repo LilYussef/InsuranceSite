@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Yhelix Insurance",
   description: "Modern, sleek, and animated insurance solutions from Yhelix.",
-    generator: 'v0.dev'
+    generator: 'Yussef Helmy'
 }
 
 export default function RootLayout({
